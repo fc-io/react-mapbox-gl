@@ -3,7 +3,11 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.ScaleControl = exports.ZoomControl = exports.Popup = exports.Map = exports.Layer = exports.Feature = undefined;
+exports.ScaleControl = exports.ZoomControl = exports.Popup = exports.Map = exports.Layer = exports.Feature = exports.mapboxgl = undefined;
+
+var _mapboxGl = require("mapbox-gl/dist/mapbox-gl");
+
+var _mapboxGl2 = _interopRequireDefault(_mapboxGl);
 
 var _map = require("./map");
 
@@ -31,6 +35,7 @@ var _scaleControl2 = _interopRequireDefault(_scaleControl);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+exports.mapboxgl = _mapboxGl2.default;
 exports.Feature = _feature2.default;
 exports.Layer = _layer2.default;
 exports.Map = _map2.default;

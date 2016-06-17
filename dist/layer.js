@@ -249,6 +249,7 @@ var Layer = (_temp2 = _class = function (_Component) {
         return _this5.feature(props, id);
       }).filter(Boolean);
 
+      console.log('test', this.source);
       this.source.setData({
         type: "FeatureCollection",
         features: features

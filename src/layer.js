@@ -199,6 +199,7 @@ export default class Layer extends Component {
         .map(({ props }, id) => this.feature(props, id))
         .filter(Boolean);
 
+      console.log('test', this.source)
       this.source.setData({
         type: "FeatureCollection",
         features
@@ -208,4 +209,3 @@ export default class Layer extends Component {
     return null;
   }
 }
-

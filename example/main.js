@@ -3,5 +3,6 @@ import {render} from "react-dom";
 
 import AllShapes from "./all-shapes";
 import LondonCycle from "./london-cycle";
+import AddSource from "./add-source";
 
-render(<LondonCycle/>, document.getElementById("root"));
+render(<AddSource/>, document.getElementById("root"));
